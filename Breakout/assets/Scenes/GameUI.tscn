@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://dhv34ja3ipu0x"]
+
+[ext_resource type="Script" uid="uid://ku5wa4sp28l5" path="res://assets/Scripts/UI/UIController.gd" id="1_tyage"]
+[ext_resource type="Script" uid="uid://cvs2e650cd5rm" path="res://assets/Scripts/UI/LifeUIController.gd" id="2_37hul"]
+
+[sub_resource type="FontFile" id="FontFile_078yy"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/17/0/ascent = 0.0
+cache/0/17/0/descent = 0.0
+cache/0/17/0/underline_position = 0.0
+cache/0/17/0/underline_thickness = 0.0
+cache/0/17/0/scale = 1.0
+cache/0/18/0/ascent = 0.0
+cache/0/18/0/descent = 0.0
+cache/0/18/0/underline_position = 0.0
+cache/0/18/0/underline_thickness = 0.0
+cache/0/18/0/scale = 1.0
+cache/0/19/0/ascent = 0.0
+cache/0/19/0/descent = 0.0
+cache/0/19/0/underline_position = 0.0
+cache/0/19/0/underline_thickness = 0.0
+cache/0/19/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/21/0/ascent = 0.0
+cache/0/21/0/descent = 0.0
+cache/0/21/0/underline_position = 0.0
+cache/0/21/0/underline_thickness = 0.0
+cache/0/21/0/scale = 1.0
+cache/0/22/0/ascent = 0.0
+cache/0/22/0/descent = 0.0
+cache/0/22/0/underline_position = 0.0
+cache/0/22/0/underline_thickness = 0.0
+cache/0/22/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_tyage"]
+font = SubResource("FontFile_078yy")
+font_size = 22
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[node name="GameUI" type="Control" unique_id=846484886 node_paths=PackedStringArray("_life_ui_controller")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tyage")
+_life_ui_controller = NodePath("Life")
+
+[node name="Life" type="Node2D" parent="." unique_id=1140900163 node_paths=PackedStringArray("_num_text")]
+script = ExtResource("2_37hul")
+_num_text = NodePath("NumText")
+
+[node name="LifeText" type="Label" parent="Life" unique_id=676131511]
+offset_left = -472.0
+offset_top = -248.0
+offset_right = -430.0
+offset_bottom = -225.0
+text = "Life x"
+label_settings = SubResource("LabelSettings_tyage")
+
+[node name="NumText" type="Label" parent="Life" unique_id=30320561]
+offset_left = -408.0
+offset_top = -248.0
+offset_right = -366.0
+offset_bottom = -225.0
+text = "0"
+label_settings = SubResource("LabelSettings_tyage")

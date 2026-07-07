@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://13sxrpfbn8ob"]
+
+[ext_resource type="Script" uid="uid://cbmrhaouujk5a" path="res://assets/Scripts/Block/Block.gd" id="1_x55lh"]
+[ext_resource type="Texture2D" uid="uid://bm6ms5oq2g0l8" path="res://assets/Texture/AppleEvent.png" id="2_ujcp4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rjsgv"]
+size = Vector2(64, 20)
+
+[node name="Block" type="StaticBody2D" unique_id=149895484]
+script = ExtResource("1_x55lh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=181902174]
+shape = SubResource("RectangleShape2D_rjsgv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1431321111]
+position = Vector2(-1.13994e-06, 0)
+scale = Vector2(0.0496124, 0.01)
+texture = ExtResource("2_ujcp4")

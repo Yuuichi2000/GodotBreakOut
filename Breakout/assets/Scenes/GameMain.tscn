@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://djmwq5p81roi4"]
+
+[ext_resource type="Texture2D" uid="uid://bm6ms5oq2g0l8" path="res://assets/Texture/AppleEvent.png" id="1_fg71v"]
+[ext_resource type="PackedScene" uid="uid://bktl8xtmpt4wj" path="res://assets/Scenes/Ball.tscn" id="1_hb3jn"]
+[ext_resource type="Script" uid="uid://bm173xp21hs2u" path="res://assets/Scripts/GameMain/GameMain.gd" id="1_hoj1g"]
+[ext_resource type="Script" uid="uid://bn2qal26sedek" path="res://assets/Scripts/GameMain/State/ReadyState.gd" id="2_r8jlk"]
+[ext_resource type="Script" uid="uid://d1wy6rktwnkcp" path="res://assets/Scripts/GameMain/State/GameState.gd" id="3_3kiph"]
+[ext_resource type="Script" uid="uid://bswuyewtvhqdf" path="res://assets/Scripts/GameMain/State/GameOverState.gd" id="4_3kiph"]
+[ext_resource type="PackedScene" uid="uid://13sxrpfbn8ob" path="res://assets/Scenes/Block.tscn" id="4_mue3r"]
+[ext_resource type="PackedScene" uid="uid://ddik8gc0hdn4q" path="res://assets/Scenes/Player.tscn" id="5_i08r8"]
+[ext_resource type="Script" uid="uid://uu7u4uvue8dh" path="res://assets/Scripts/GameMain/State/RestartState.gd" id="5_ras7p"]
+[ext_resource type="PackedScene" uid="uid://dhv34ja3ipu0x" path="res://assets/Scenes/GameUI.tscn" id="6_1q58h"]
+[ext_resource type="PackedScene" uid="uid://c7b4b5uwokoi4" path="res://assets/Scenes/BlockGenerator.tscn" id="8_d5kwa"]
+[ext_resource type="PackedScene" uid="uid://cptvkaaldtakm" path="res://assets/Scenes/GameOverUI.tscn" id="10_awk2d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hoj1g"]
+
+[node name="GameMain" type="Node2D" unique_id=1222494372 node_paths=PackedStringArray("ball", "player", "_ui_controller", "gameover_ui_controller")]
+script = ExtResource("1_hoj1g")
+ball = NodePath("Ball")
+player = NodePath("Player")
+_ui_controller = NodePath("UIGroup/GameUI")
+gameover_ui_controller = NodePath("UIGroup/GameOverUI")
+_player_life = 2
+_ball_y_pos_border = 300.0
+ready_state_script = ExtResource("2_r8jlk")
+game_state_script = ExtResource("3_3kiph")
+game_over_state_script = ExtResource("4_3kiph")
+restart_state_script = ExtResource("5_ras7p")
+metadata/_edit_horizontal_guides_ = [304.0]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1147253079]
+zoom = Vector2(2, 2)
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1814266604]
+visible = false
+texture = ExtResource("1_fg71v")
+
+[node name="Ball" parent="." unique_id=1692936460 instance=ExtResource("1_hb3jn")]
+position = Vector2(0, 224)
+
+[node name="WallGroup" type="Node2D" parent="." unique_id=1221119314]
+scale = Vector2(2520.04, 1.5376)
+
+[node name="Wall4" type="RigidBody2D" parent="WallGroup" unique_id=342771883]
+position = Vector2(0.195235, 0)
+scale = Vector2(0.000396819, 0.650364)
+gravity_scale = 0.0
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallGroup/Wall4" unique_id=443231995]
+position = Vector2(0, 1.41731e-12)
+rotation = 1.5706078
+scale = Vector2(30, 1)
+shape = SubResource("RectangleShape2D_hoj1g")
+
+[node name="Wall3" type="RigidBody2D" parent="WallGroup" unique_id=1328211280]
+scale = Vector2(0.000396819, 0.650364)
+gravity_scale = 0.0
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallGroup/Wall3" unique_id=897302785]
+position = Vector2(-491, 1.41731e-12)
+rotation = 1.5708
+scale = Vector2(30, 1)
+shape = SubResource("RectangleShape2D_hoj1g")
+
+[node name="Wall" type="RigidBody2D" parent="WallGroup" unique_id=1595192539]
+scale = Vector2(0.000396819, 0.650364)
+gravity_scale = 0.0
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallGroup/Wall" unique_id=18830817]
+position = Vector2(0, -281)
+scale = Vector2(48.44, 1)
+shape = SubResource("RectangleShape2D_hoj1g")
+
+[node name="BlockGenerator" parent="." unique_id=928963423 instance=ExtResource("8_d5kwa")]
+
+[node name="BlockGroup" type="Node2D" parent="." unique_id=478445233]
+
+[node name="Block" parent="BlockGroup" unique_id=1972824955 instance=ExtResource("4_mue3r")]
+position = Vector2(-444, -254)
+
+[node name="Block2" parent="BlockGroup" unique_id=1003537472 instance=ExtResource("4_mue3r")]
+position = Vector2(-377, -254)
+
+[node name="Block3" parent="BlockGroup" unique_id=790469793 instance=ExtResource("4_mue3r")]
+position = Vector2(-309, -254)
+
+[node name="Block4" parent="BlockGroup" unique_id=372268493 instance=ExtResource("4_mue3r")]
+position = Vector2(-242, -254)
+
+[node name="Block5" parent="BlockGroup" unique_id=389642080 instance=ExtResource("4_mue3r")]
+position = Vector2(-175, -254)
+
+[node name="Block6" parent="BlockGroup" unique_id=1535415576 instance=ExtResource("4_mue3r")]
+position = Vector2(-107, -254)
+
+[node name="Block7" parent="BlockGroup" unique_id=272015644 instance=ExtResource("4_mue3r")]
+position = Vector2(-39, -254)
+
+[node name="Block8" parent="BlockGroup" unique_id=1666495163 instance=ExtResource("4_mue3r")]
+position = Vector2(28, -254)
+
+[node name="Block9" parent="BlockGroup" unique_id=114729296 instance=ExtResource("4_mue3r")]
+position = Vector2(96, -254)
+
+[node name="Block10" parent="BlockGroup" unique_id=1645760121 instance=ExtResource("4_mue3r")]
+position = Vector2(163, -254)
+
+[node name="Block11" parent="BlockGroup" unique_id=1696365267 instance=ExtResource("4_mue3r")]
+position = Vector2(230, -254)
+
+[node name="Block12" parent="BlockGroup" unique_id=1036596979 instance=ExtResource("4_mue3r")]
+position = Vector2(298, -254)
+
+[node name="Player" parent="." unique_id=191121649 instance=ExtResource("5_i08r8")]
+position = Vector2(0, 248)
+_player_initial_pos = Vector2(0, 248)
+
+[node name="UIGroup" type="Node2D" parent="." unique_id=81864021]
+
+[node name="GameUI" parent="UIGroup" unique_id=1546611543 instance=ExtResource("6_1q58h")]
+
+[node name="GameOverUI" parent="UIGroup" unique_id=1049894516 instance=ExtResource("10_awk2d")]

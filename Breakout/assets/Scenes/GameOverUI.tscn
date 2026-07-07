@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cptvkaaldtakm"]
+
+[ext_resource type="Script" uid="uid://bk4alexk1cjvd" path="res://assets/Scripts/UI/GameOverUIController.gd" id="1_qp84s"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_s7gvh"]
+font_size = 80
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 10
+shadow_color = Color(0, 0, 0, 0.32892957)
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="GDScript" id="GDScript_lvt8e"]
+
+[node name="GameOverUI" type="Control" unique_id=235098644 node_paths=PackedStringArray("try_again_button")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qp84s")
+try_again_button = NodePath("TryAgain")
+
+[node name="GameOver" type="Label" parent="." unique_id=56412977]
+layout_mode = 0
+offset_left = -256.0
+offset_top = -56.0
+offset_right = 256.0
+offset_bottom = 55.0
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_s7gvh")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TryAgain" type="Button" parent="." unique_id=518622250]
+layout_mode = 0
+offset_left = -96.0
+offset_top = 112.0
+offset_right = -24.0
+offset_bottom = 143.0
+text = "Try Again"
+script = SubResource("GDScript_lvt8e")
+
+[node name="BackToTitle" type="Button" parent="." unique_id=729286279]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 112.0
+offset_right = 96.0
+offset_bottom = 143.0
+text = "Back to Title"
+flat = true

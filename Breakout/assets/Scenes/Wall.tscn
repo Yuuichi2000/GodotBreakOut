@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://6fj4djlnqhxh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nkglm"]
+
+[node name="Wall" type="Node2D"]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+disable_mode = 2
+gravity_scale = 0.0
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("RectangleShape2D_nkglm")

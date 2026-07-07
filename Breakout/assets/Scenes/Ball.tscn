@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bktl8xtmpt4wj"]
+
+[ext_resource type="Texture2D" uid="uid://bm6ms5oq2g0l8" path="res://assets/Texture/AppleEvent.png" id="1_7nh6h"]
+[ext_resource type="Script" uid="uid://nyxantqblp76" path="res://assets/Scripts/Ball/Ball.gd" id="1_eb1ap"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7nh6h"]
+friction = 0.0
+bounce = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eb1ap"]
+
+[node name="Ball" type="RigidBody2D" unique_id=694326760 node_paths=PackedStringArray("rigidBody")]
+mass = 1.101
+physics_material_override = SubResource("PhysicsMaterial_7nh6h")
+gravity_scale = 0.0
+script = ExtResource("1_eb1ap")
+rigidBody = NodePath(".")
+velocity = 400.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1965340491]
+position = Vector2(1.19209e-07, 0)
+scale = Vector2(0.0155039, 0.01)
+texture = ExtResource("1_7nh6h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2119722688]
+shape = SubResource("CircleShape2D_eb1ap")

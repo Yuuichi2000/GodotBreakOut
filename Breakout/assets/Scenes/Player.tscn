@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ddik8gc0hdn4q"]
+
+[ext_resource type="Script" uid="uid://ui4audhxyudg" path="res://assets/Scripts/Player/Player.gd" id="1_kyqiw"]
+[ext_resource type="Texture2D" uid="uid://bm6ms5oq2g0l8" path="res://assets/Texture/AppleEvent.png" id="1_rpqav"]
+[ext_resource type="Script" uid="uid://dam6asclnpmr6" path="res://assets/Scripts/Player/State/PlayerReadyState.gd" id="2_gntrk"]
+[ext_resource type="Script" uid="uid://dd7s2ltii27k3" path="res://assets/Scripts/Player/State/PlayerPlayState.gd" id="3_dewec"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kyqiw"]
+size = Vector2(128, 24)
+
+[node name="Player" type="StaticBody2D" unique_id=1536316847]
+script = ExtResource("1_kyqiw")
+_move_speed = 5.0
+_min_pos_x = -415.0
+_max_pos_x = 415.0
+ready_state_script = ExtResource("2_gntrk")
+play_state_script = ExtResource("3_dewec")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1731436990]
+scale = Vector2(0.099224806, 0.011881189)
+texture = ExtResource("1_rpqav")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=821418658]
+shape = SubResource("RectangleShape2D_kyqiw")

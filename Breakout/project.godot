@@ -1,0 +1,138 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="Breakout"
+run/main_scene="res://assets/Scenes/GameMain.tscn"
+config/features=PackedStringArray("4.6", "Mobile")
+config/icon="res://assets/icon.svg"
+
+[audio]
+
+buses/default_bus_layout="res://assets/default_bus_layout.tres"
+
+[autoload]
+
+EventBus="*res://assets/Scripts/EventBus/EventBus.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=4
+window/size/resizable=false
+window/size/borderless=true
+window/stretch/mode="viewport"
+
+[input]
+
+move_left={
+"deadzone": 0.5,
+"events": Array[InputEvent]([Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":0,"axis_value":-1.0,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194319,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+])
+}
+move_right={
+"deadzone": 0.5,
+"events": Array[InputEvent]([Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":0,"axis_value":1.0,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194321,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+])
+}
+
+[input_devices]
+
+virtual_controller/ios/enable_button_b=false
+virtual_controller/ios/enable_button_x=false
+virtual_controller/ios/enable_button_y=false
+
+[rendering]
+
+renderer/rendering_method="mobile"
+
+[xogot]
+
+project/editorState=[{
+"column": 0,
+"line": 43,
+"path": "res://assets/Scripts/Player/State/PlayerPlayState.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 20,
+"path": "res://assets/Scripts/GameMain/State/GameOverState.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 21,
+"path": "res://assets/Scripts/GameMain/State/GameState.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 67,
+"path": "res://assets/Scripts/Player/Player.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 10,
+"path": "res://assets/Scripts/Player/State/PlayerReadyState.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 37,
+"path": "res://assets/Scripts/StateMachine/StateMachineCore.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 3,
+"path": "res://assets/Scripts/GameMain/GameMain.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 14,
+"path": "res://assets/Scripts/GameMain/State/RestartState.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 79,
+"path": "res://assets/Scripts/Ball/Ball.gd",
+"type": "file"
+}, {
+"column": 0,
+"current": true,
+"line": 14,
+"path": "res://assets/Scripts/Block/BlockGenerator.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 5,
+"path": "res://assets/Scripts/Block/Block.gd",
+"type": "file"
+}]
+project/breakpoints={
+"res://Scripts/Ball/Ball.gd": PackedInt32Array(),
+"res://Scripts/EventBus/EventBus.gd": PackedInt32Array(),
+"res://Scripts/GameMain/GameMain.gd": PackedInt32Array(),
+"res://Scripts/GameMain/State/ReadyState.gd": PackedInt32Array(),
+"res://Scripts/Input/InputActionList.gd": PackedInt32Array(),
+"res://Scripts/Player/Player.gd": PackedInt32Array(),
+"res://Scripts/StateMachine/StateMachineNode.gd": PackedInt32Array(),
+"res://assets/Scripts/GameMain/State/GameState.gd": PackedInt32Array(),
+"res://assets/Scripts/GameMain/State/RestartState.gd": PackedInt32Array(),
+"res://assets/Scripts/Player/Player.gd": PackedInt32Array(),
+"res://assets/Scripts/Player/State/PlayerPlayState.gd": PackedInt32Array()
+}
+project/disabled_breakpoints={}

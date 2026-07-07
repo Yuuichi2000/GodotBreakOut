@@ -112,9 +112,9 @@ project/editorState=[{
 "path": "res://assets/Scripts/Ball/Ball.gd",
 "type": "file"
 }, {
-"column": 0,
+"column": 23,
 "current": true,
-"line": 14,
+"line": 15,
 "path": "res://assets/Scripts/Block/BlockGenerator.gd",
 "type": "file"
 }, {

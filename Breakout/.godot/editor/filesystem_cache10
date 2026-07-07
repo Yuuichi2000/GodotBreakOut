@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1783430773
+::res://::1783435724
 ::res://addons/::1783394082
 ::res://addons/asset_browser/::1783394065
 asset_browser_panel.gd::GDScript::740648813379158448::1783387267::0::1::::<>Control<><>0<>1<><>::
@@ -161,7 +161,7 @@ plugin.cfg::TextFile::-1::1783387267::0::1::::<><><>0<>0<><>::
 plugin.gd::GDScript::4719288818825183521::1783387267::0::1::::<>EditorPlugin<><>0<>1<><>::
 Settings.gd::GDScript::8245943960072685880::1783387267::0::1::::<>TabBar<><>0<>1<><>::
 tabs.gd::GDScript::2018510345220353872::1783387267::0::1::::<>TabContainer<><>0<>1<><>::
-::res://assets/::1783430517
+::res://assets/::1783431042
 default_bus_layout.tres::AudioBusLayout::1779614053086956009::1783387267::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::5140626159803882362::1783387267::1783394130::1::::<><><>0<>0<>e55ed7eae7cae13e6319838d07533252<>res://.godot/imported/icon.svg-56083ea2a1f1a4f1e49773bdc6d7826c.ctex::
 ::res://assets/Scenes/::1783430517
@@ -173,12 +173,12 @@ GameOverUI.tscn::PackedScene::5866190114575514120::1783387267::0::1::::<><><>0<>
 GameUI.tscn::PackedScene::7695688227195135537::1783387267::0::1::::<><><>0<>0<><>::uid://ku5wa4sp28l5::::res://assets/Scripts/UI/UIController.gd<>uid://cvs2e650cd5rm::::res://assets/Scripts/UI/LifeUIController.gd
 Player.tscn::PackedScene::7387010024527488326::1783387267::0::1::::<><><>0<>0<><>::uid://ui4audhxyudg::::res://assets/Scripts/Player/Player.gd<>uid://bm6ms5oq2g0l8::::res://assets/Texture/AppleEvent.png<>uid://dam6asclnpmr6::::res://assets/Scripts/Player/State/PlayerReadyState.gd<>uid://dd7s2ltii27k3::::res://assets/Scripts/Player/State/PlayerPlayState.gd
 Wall.tscn::PackedScene::2186774454498532897::1783387267::0::1::::<><><>0<>0<><>::
-::res://assets/Scripts/::1783430457
+::res://assets/Scripts/::1783431042
 ::res://assets/Scripts/Ball/::1783394072
 Ball.gd::GDScript::963397237109073987::1783387267::0::1::::Ball<>RigidBody2D<><>0<>0<><>::
-::res://assets/Scripts/Block/::1783430457
+::res://assets/Scripts/Block/::1783431042
 Block.gd::GDScript::4868847456070379308::1783387267::0::1::::Block<>StaticBody2D<><>0<>0<><>::
-BlockGenerator.gd::GDScript::7507618026486380908::1783430451::0::1::::BlockGenerator<>Node2D<><>0<>0<><>::
+BlockGenerator.gd::GDScript::7507618026486380908::1783431038::0::1::::BlockGenerator<>Node2D<><>0<>0<><>::
 ::res://assets/Scripts/EventBus/::1783394077
 EventBus.gd::GDScript::8882200931433799108::1783387267::0::1::::<>Node<><>0<>0<><>::
 ::res://assets/Scripts/GameMain/::1783394082

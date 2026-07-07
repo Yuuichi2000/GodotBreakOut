@@ -29,3 +29,7 @@ func register_block(block: Block) -> void:
 ## 销毁单个砖块
 func unregister_block(block: Block) -> void:
 	_blocks.erase(block)
+	
+## 获取场景内剩余的砖块数
+func get_block_count() -> int:
+	return _blocks.size()

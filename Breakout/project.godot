@@ -37,6 +37,10 @@ window/size/resizable=false
 window/size/borderless=true
 window/stretch/mode="viewport"
 
+[editor_plugins]
+
+enabled=PackedStringArray()
+
 [input]
 
 move_left={
@@ -112,7 +116,7 @@ project/editorState=[{
 "path": "res://assets/Scripts/Ball/Ball.gd",
 "type": "file"
 }, {
-"column": 41,
+"column": 0,
 "current": true,
 "line": 29,
 "path": "res://assets/Scripts/Block/BlockGenerator.gd",

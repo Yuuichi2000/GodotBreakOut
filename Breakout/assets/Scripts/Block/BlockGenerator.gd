@@ -46,6 +46,11 @@ func create_all_blocks() -> void:
 			
 			register_block(block)
 			
+## 销毁所有砖块
+func destroy_all_blocks() -> void:
+	for block in _blocks:
+		unregister_block(block)
+			
 ## 注册单个砖块
 func register_block(block: Block) -> void:
 	_blocks.append(block)

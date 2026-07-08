@@ -76,9 +76,10 @@ scale = Vector2(48.44, 1)
 shape = SubResource("RectangleShape2D_hoj1g")
 
 [node name="BlockGenerator" parent="." unique_id=928963423 instance=ExtResource("8_d5kwa")]
-space = Vector2(64, 32)
-block_num_rows = 10
-block_num_cols = 4
+block_space = Vector2(64, 32)
+block_center_pos = Vector2(0, -200)
+block_num_cols = 10
+block_num_rows = 4
 
 [node name="BlockGroup" type="Node2D" parent="." unique_id=478445233]
 

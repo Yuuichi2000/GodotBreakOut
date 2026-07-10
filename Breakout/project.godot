@@ -102,7 +102,7 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 3,
+"line": 4,
 "path": "res://assets/Scripts/GameMain/GameMain.gd",
 "type": "file"
 }, {
@@ -116,15 +116,35 @@ project/editorState=[{
 "path": "res://assets/Scripts/Ball/Ball.gd",
 "type": "file"
 }, {
-"column": 0,
+"column": 6,
 "current": true,
-"line": 29,
+"line": 47,
 "path": "res://assets/Scripts/Block/BlockGenerator.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 5,
+"column": 22,
+"line": 15,
 "path": "res://assets/Scripts/Block/Block.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 9,
+"path": "res://assets/Scripts/GameMain/State/ReadyState.gd",
+"type": "file"
+}, {
+"column": 27,
+"line": 8,
+"path": "/private/var/mobile/Library/Mobile Documents/com~apple~CloudDocs/Xogot/Breakout/assets/Scripts/GameMain/State/ReadyState.gd",
+"type": "file"
+}, {
+"column": 36,
+"line": 56,
+"path": "/private/var/mobile/Library/Mobile Documents/com~apple~CloudDocs/Xogot/Breakout/assets/Scripts/GameMain/GameMain.gd",
+"type": "file"
+}, {
+"column": 46,
+"line": 16,
+"path": "/private/var/mobile/Library/Mobile Documents/com~apple~CloudDocs/Xogot/Breakout/assets/Scripts/GameMain/State/RestartState.gd",
 "type": "file"
 }]
 project/breakpoints={
@@ -135,7 +155,9 @@ project/breakpoints={
 "res://Scripts/Input/InputActionList.gd": PackedInt32Array(),
 "res://Scripts/Player/Player.gd": PackedInt32Array(),
 "res://Scripts/StateMachine/StateMachineNode.gd": PackedInt32Array(),
+"res://assets/Scripts/Block/BlockGenerator.gd": PackedInt32Array(),
 "res://assets/Scripts/GameMain/State/GameState.gd": PackedInt32Array(),
+"res://assets/Scripts/GameMain/State/ReadyState.gd": PackedInt32Array(),
 "res://assets/Scripts/GameMain/State/RestartState.gd": PackedInt32Array(),
 "res://assets/Scripts/Player/Player.gd": PackedInt32Array(),
 "res://assets/Scripts/Player/State/PlayerPlayState.gd": PackedInt32Array()

@@ -1,1 +1,6 @@
+res://assets/Scripts/GameMain/State/ReadyState.gd
+res://assets/Scripts/GameMain/GameMain.gd
+res://assets/Scripts/GameMain/State/RestartState.gd
+res://assets/Scripts/Block/Block.gd
 res://assets/Scripts/Block/BlockGenerator.gd
+res://assets/Scenes/GameMain.tscn

@@ -5,10 +5,13 @@ class_name Block
 ## HP
 @export var hp: int = 1
 
+signal destroyed(block: Block)
+
 func _ready() -> void:
 	pass
 	
 func hit(attack: int) -> void:
 	hp -= attack
 	if (hp <= 0):
+		destroyed.emit(self)
 		queue_free()

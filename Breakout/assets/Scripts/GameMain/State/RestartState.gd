@@ -12,6 +12,10 @@ func enter(prev_state: State) -> void:
 	# 重置球
 	game_main.ball.reset_ball(Vector2(0, 240))
 	
+	# 销毁所有砖块并重新创建
+	game_main.block_generator.destroy_all_blocks()
+	game_main.block_generator.create_all_blocks()
+	
 	# 使玩家进入准备状态
 	EventBus.player_ready.emit()
 	

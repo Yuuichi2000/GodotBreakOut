@@ -15,6 +15,9 @@ class_name GameMain
 ## GameOver UI
 @export var gameover_ui_controller: GameOverUIController
 
+## 砖块创建器
+@export var block_generator: BlockGenerator
+
 @export_category("参数")
 
 ## 玩家生命数
@@ -51,6 +54,7 @@ func _ready() -> void:
 	state_machine.change_state(ready_state_script)
 	
 	_player_life_init = _player_life
+	block_generator.create_all_blocks()
 
 func _input(event: InputEvent) -> void:
 	state_machine.input(event)

@@ -116,13 +116,13 @@ project/editorState=[{
 "path": "res://assets/Scripts/Ball/Ball.gd",
 "type": "file"
 }, {
-"column": 6,
+"column": 43,
 "current": true,
-"line": 47,
+"line": 29,
 "path": "res://assets/Scripts/Block/BlockGenerator.gd",
 "type": "file"
 }, {
-"column": 22,
+"column": 0,
 "line": 15,
 "path": "res://assets/Scripts/Block/Block.gd",
 "type": "file"
@@ -132,17 +132,17 @@ project/editorState=[{
 "path": "res://assets/Scripts/GameMain/State/ReadyState.gd",
 "type": "file"
 }, {
-"column": 27,
+"column": 0,
 "line": 8,
 "path": "/private/var/mobile/Library/Mobile Documents/com~apple~CloudDocs/Xogot/Breakout/assets/Scripts/GameMain/State/ReadyState.gd",
 "type": "file"
 }, {
-"column": 36,
+"column": 0,
 "line": 56,
 "path": "/private/var/mobile/Library/Mobile Documents/com~apple~CloudDocs/Xogot/Breakout/assets/Scripts/GameMain/GameMain.gd",
 "type": "file"
 }, {
-"column": 46,
+"column": 0,
 "line": 16,
 "path": "/private/var/mobile/Library/Mobile Documents/com~apple~CloudDocs/Xogot/Breakout/assets/Scripts/GameMain/State/RestartState.gd",
 "type": "file"

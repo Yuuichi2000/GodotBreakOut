@@ -26,8 +26,8 @@ func create_all_blocks() -> void:
 	## 以offset为基准计算
 	var half_of_block_num: Vector2 = Vector2(0, 0)
 	
-	half_of_block_num.x = block_num_cols / 2
-	half_of_block_num.y = block_num_rows / 2
+	half_of_block_num.x = block_num_cols / 2.0
+	half_of_block_num.y = block_num_rows / 2.0
 	
 	## 开始创建砖块的坐标
 	var block_start_pos: Vector2 = Vector2(0, 0)

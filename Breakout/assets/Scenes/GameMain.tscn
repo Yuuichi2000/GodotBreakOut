@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://ddik8gc0hdn4q" path="res://assets/Scenes/Player.tscn" id="5_i08r8"]
 [ext_resource type="Script" uid="uid://uu7u4uvue8dh" path="res://assets/Scripts/GameMain/State/RestartState.gd" id="5_ras7p"]
 [ext_resource type="PackedScene" uid="uid://dhv34ja3ipu0x" path="res://assets/Scenes/GameUI.tscn" id="6_1q58h"]
+[ext_resource type="Script" uid="uid://ckpj07psxk2yw" path="res://assets/Scripts/GameMain/State/GameClearState.gd" id="6_hq3s3"]
 [ext_resource type="PackedScene" uid="uid://c7b4b5uwokoi4" path="res://assets/Scenes/BlockGenerator.tscn" id="8_d5kwa"]
 [ext_resource type="PackedScene" uid="uid://6fj4djlnqhxh" path="res://assets/Scenes/Wall.tscn" id="8_hq3s3"]
 [ext_resource type="PackedScene" uid="uid://cptvkaaldtakm" path="res://assets/Scenes/GameOverUI.tscn" id="10_awk2d"]
@@ -26,6 +27,7 @@ ready_state_script = ExtResource("2_r8jlk")
 game_state_script = ExtResource("3_3kiph")
 game_over_state_script = ExtResource("4_3kiph")
 restart_state_script = ExtResource("5_ras7p")
+game_clear_script = ExtResource("6_hq3s3")
 metadata/_edit_horizontal_guides_ = [304.0]
 metadata/_edit_vertical_guides_ = [-464.0]
 

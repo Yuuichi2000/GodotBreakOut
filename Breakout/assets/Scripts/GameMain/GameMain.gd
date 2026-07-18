@@ -40,6 +40,9 @@ class_name GameMain
 ## 游戏重开
 @export var restart_state_script: Script
 
+## 游戏通关
+@export var game_clear_script: Script
+
 ## 状态机
 var state_machine:= StateMachineNode.new()
 

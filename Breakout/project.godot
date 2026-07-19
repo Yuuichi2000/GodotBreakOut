@@ -136,7 +136,7 @@ project/editorState=[{
 "path": "/private/var/mobile/Library/Mobile Documents/com~apple~CloudDocs/Xogot/Breakout/assets/Scripts/GameMain/State/ReadyState.gd",
 "type": "file"
 }, {
-"column": 37,
+"column": 0,
 "line": 34,
 "path": "/private/var/mobile/Library/Mobile Documents/com~apple~CloudDocs/Xogot/Breakout/assets/Scripts/GameMain/GameMain.gd",
 "type": "file"
@@ -146,7 +146,7 @@ project/editorState=[{
 "path": "/private/var/mobile/Library/Mobile Documents/com~apple~CloudDocs/Xogot/Breakout/assets/Scripts/GameMain/State/RestartState.gd",
 "type": "file"
 }, {
-"column": 5,
+"column": 0,
 "current": true,
 "line": 9,
 "path": "res://assets/Scripts/GameMain/State/GameClearState.gd",

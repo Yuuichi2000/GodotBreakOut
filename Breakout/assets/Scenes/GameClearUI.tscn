@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://45dgdo61rptj"]
+
+[ext_resource type="Script" uid="uid://c5j5fxbxg7lax" path="res://assets/Scripts/UI/GameClearUIController.gd" id="1_f0oho"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ub40r"]
+font_size = 96
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 10
+shadow_color = Color(0, 0, 0, 0.39632282)
+shadow_offset = Vector2(5, 5)
+
+[node name="GameClearUI" type="Control" unique_id=893802444 node_paths=PackedStringArray("play_again_button")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f0oho")
+play_again_button = NodePath("PlayAgain")
+
+[node name="Cleared" type="Label" parent="." unique_id=1066121702]
+layout_mode = 0
+offset_left = -208.0
+offset_top = -64.0
+offset_right = 207.0
+offset_bottom = 68.0
+text = "CLEARED"
+label_settings = SubResource("LabelSettings_ub40r")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayAgain" type="Button" parent="." unique_id=429155297]
+layout_mode = 0
+offset_left = -120.0
+offset_top = 120.0
+offset_right = -32.0
+offset_bottom = 151.0
+text = "Play Again"
+
+[node name="BackToTitle" type="Button" parent="." unique_id=579222689]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 120.0
+offset_right = 135.0
+offset_bottom = 151.0
+text = "Back to Title"
+flat = true

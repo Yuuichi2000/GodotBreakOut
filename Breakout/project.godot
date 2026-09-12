@@ -76,8 +76,8 @@ project/editorState=[{
 "path": "res://assets/Scripts/Player/State/PlayerPlayState.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 20,
+"column": 50,
+"line": 11,
 "path": "res://assets/Scripts/GameMain/State/GameOverState.gd",
 "type": "file"
 }, {
@@ -101,13 +101,13 @@ project/editorState=[{
 "path": "res://assets/Scripts/StateMachine/StateMachineCore.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 4,
+"column": 33,
+"line": 26,
 "path": "res://assets/Scripts/GameMain/GameMain.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 14,
+"line": 5,
 "path": "res://assets/Scripts/GameMain/State/RestartState.gd",
 "type": "file"
 }, {
@@ -127,29 +127,24 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 9,
+"line": 8,
 "path": "res://assets/Scripts/GameMain/State/ReadyState.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 8,
-"path": "/private/var/mobile/Library/Mobile Documents/com~apple~CloudDocs/Xogot/Breakout/assets/Scripts/GameMain/State/ReadyState.gd",
-"type": "file"
-}, {
-"column": 0,
-"line": 34,
-"path": "/private/var/mobile/Library/Mobile Documents/com~apple~CloudDocs/Xogot/Breakout/assets/Scripts/GameMain/GameMain.gd",
-"type": "file"
-}, {
-"column": 0,
-"line": 5,
-"path": "/private/var/mobile/Library/Mobile Documents/com~apple~CloudDocs/Xogot/Breakout/assets/Scripts/GameMain/State/RestartState.gd",
-"type": "file"
-}, {
-"column": 0,
+"column": 27,
 "current": true,
-"line": 9,
+"line": 13,
 "path": "res://assets/Scripts/GameMain/State/GameClearState.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 0,
+"path": "res://assets/Scripts/UI/GameOverUIController.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 0,
+"path": "res://assets/Scripts/UI/GameClearUIController.gd",
 "type": "file"
 }]
 project/breakpoints={
@@ -168,3 +163,4 @@ project/breakpoints={
 "res://assets/Scripts/Player/State/PlayerPlayState.gd": PackedInt32Array()
 }
 project/disabled_breakpoints={}
+project/shaderEditorState=[]

@@ -15,6 +15,9 @@ class_name GameMain
 ## GameOver UI
 @export var gameover_ui_controller: GameOverUIController
 
+## GameClear UI
+@export var gameclear_ui_controller: GameClearUIController
+
 ## 砖块创建器
 @export var block_generator: BlockGenerator
 

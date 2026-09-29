@@ -5,8 +5,12 @@ func _game_main() -> GameMain:
 
 func enter(prev_state: State) -> void:
 	var game_main: GameMain = _game_main()
+	
+	## UI的显示设置
 	game_main._ui_controller.set_life(game_main._player_life)
 	game_main.gameover_ui_controller.set_active(false)
+	game_main.gameclear_ui_controller.set_active(false)
+	
 	game_main.set_game_active(true, true)
 	EventBus.game_start.connect(_game_start)
 	

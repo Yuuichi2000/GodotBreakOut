@@ -52,10 +52,12 @@ var state_machine:= StateMachineNode.new()
 var _player_life_init: int = 0
 
 func _ready() -> void:
+	## 添加各个状态机
 	state_machine.add_state(ready_state_script.new(self))
 	state_machine.add_state(game_state_script.new(self))
 	state_machine.add_state(game_over_state_script.new(self))
 	state_machine.add_state(restart_state_script.new(self))
+	state_machine.add_state(game_clear_script.new(self))
 	
 	state_machine.change_state(ready_state_script)
 	

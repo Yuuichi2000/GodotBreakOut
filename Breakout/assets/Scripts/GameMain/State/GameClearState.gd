@@ -7,7 +7,7 @@ func enter(prev_state: State) -> void:
 	var game_main: GameMain = _game_main()
 	
 	game_main.gameclear_ui_controller.set_active(true)
-	game_main.set_game_active(true, false)
+	game_main.set_game_active(false, false)
 	
 	game_main.gameclear_ui_controller.play_again_button.pressed.connect(_on_play_again_pressed)
 	

@@ -9,6 +9,11 @@ func enter(prev_state: State) -> void:
 func update(delta) -> void:
 	var game_main: GameMain = _game_main()
 	
+	## 检测是否通关 优先级大于游戏结束
+	if (game_main.block_generator.get_block_count() <= 0):
+		machine.change_state(game_main.game_clear_script)
+		return
+	
 	if (_detect_gameover() == false):
 		return
 	

@@ -13,13 +13,15 @@
 [ext_resource type="PackedScene" uid="uid://c7b4b5uwokoi4" path="res://assets/Scenes/BlockGenerator.tscn" id="8_d5kwa"]
 [ext_resource type="PackedScene" uid="uid://6fj4djlnqhxh" path="res://assets/Scenes/Wall.tscn" id="8_hq3s3"]
 [ext_resource type="PackedScene" uid="uid://cptvkaaldtakm" path="res://assets/Scenes/GameOverUI.tscn" id="10_awk2d"]
+[ext_resource type="PackedScene" uid="uid://45dgdo61rptj" path="res://assets/Scenes/GameClearUI.tscn" id="14_esy2h"]
 
-[node name="GameMain" type="Node2D" unique_id=1222494372 node_paths=PackedStringArray("ball", "player", "_ui_controller", "gameover_ui_controller", "block_generator") groups=["assets"]]
+[node name="GameMain" type="Node2D" unique_id=1222494372 node_paths=PackedStringArray("ball", "player", "_ui_controller", "gameover_ui_controller", "gameclear_ui_controller", "block_generator") groups=["assets"]]
 script = ExtResource("1_hoj1g")
 ball = NodePath("Ball")
 player = NodePath("Player")
 _ui_controller = NodePath("UIGroup/GameUI")
 gameover_ui_controller = NodePath("UIGroup/GameOverUI")
+gameclear_ui_controller = NodePath("UIGroup/GameClearUI")
 block_generator = NodePath("BlockGenerator")
 _player_life = 2
 _ball_y_pos_border = 300.0
@@ -70,3 +72,5 @@ _player_initial_pos = Vector2(0, 248)
 [node name="GameUI" parent="UIGroup" unique_id=1546611543 instance=ExtResource("6_1q58h")]
 
 [node name="GameOverUI" parent="UIGroup" unique_id=1049894516 instance=ExtResource("10_awk2d")]
+
+[node name="GameClearUI" parent="UIGroup" unique_id=893802444 instance=ExtResource("14_esy2h")]

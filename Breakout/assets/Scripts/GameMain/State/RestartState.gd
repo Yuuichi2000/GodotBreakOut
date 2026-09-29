@@ -6,6 +6,9 @@ func _game_main() -> GameMain:
 func enter(prev_state: State) -> void:
 	var game_main: GameMain = _game_main()
 	
+	# 改变游戏的更新状态
+	game_main.set_game_active(true, true)
+	
 	# 重置玩家命数
 	game_main.reset_player_life()
 	

@@ -17,7 +17,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="Breakout"
 config/version="0.1"
 run/main_scene="res://assets/Scenes/GameMain.tscn"
-config/features=PackedStringArray("4.6", "Mobile")
+config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://assets/icon.svg"
 
 [audio]
@@ -108,18 +108,18 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"current": true,
-"line": 76,
+"line": 56,
 "path": "res://assets/Scripts/GameMain/GameMain.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 9,
+"line": 15,
 "path": "res://assets/Scripts/GameMain/State/RestartState.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 77,
+"column": 5,
+"current": true,
+"line": 56,
 "path": "res://assets/Scripts/Ball/Ball.gd",
 "type": "file"
 }, {
@@ -133,17 +133,17 @@ project/editorState=[{
 "path": "res://assets/Scripts/Block/Block.gd",
 "type": "file"
 }, {
-"column": 11,
+"column": 0,
 "line": 13,
 "path": "res://assets/Scripts/GameMain/State/ReadyState.gd",
 "type": "file"
 }, {
-"column": 32,
+"column": 0,
 "line": 9,
 "path": "res://assets/Scripts/GameMain/State/GameClearState.gd",
 "type": "file"
 }, {
-"column": 7,
+"column": 0,
 "line": 8,
 "path": "res://assets/Scripts/UI/GameOverUIController.gd",
 "type": "file"

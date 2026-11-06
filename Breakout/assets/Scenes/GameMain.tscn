@@ -58,8 +58,8 @@ scale = Vector2(1, 28)
 [node name="BlockGenerator" parent="." unique_id=928963423 instance=ExtResource("8_d5kwa")]
 block_space = Vector2(68, 24)
 block_center_pos = Vector2(0, -200)
-block_num_cols = 13
-block_num_rows = 4
+block_num_cols = 1
+block_num_rows = 1
 
 [node name="Player" parent="." unique_id=191121649 instance=ExtResource("5_i08r8")]
 position = Vector2(0, 248)

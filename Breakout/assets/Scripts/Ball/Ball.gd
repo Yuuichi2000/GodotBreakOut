@@ -21,6 +21,11 @@ class_name Ball
 ## 是否已发球
 var shotBall: bool = false
 
+## 初始坐标
+var _initial_pos: Vector2
+
+var _reset_pending: bool = false
+
 ## 初始化
 func _ready() -> void:
 	rigidBody.gravity_scale = 0
@@ -29,10 +34,11 @@ func _ready() -> void:
 	rigidBody.lock_rotation = true
 	rigidBody.linear_damp = 0
 	rigidBody.angular_damp = 0
+	_initial_pos = global_position
 	
 	# 设置碰撞后的信号函数
 	rigidBody.body_entered.connect(_on_body_entered)
-	
+
 ## 物理处理
 func _physics_process(_delta: float) -> void:
 	if (shotBall == false):
@@ -49,14 +55,26 @@ func _physics_process(_delta: float) -> void:
 
 	rigidBody.linear_velocity = _normalizedVelocity * velocity
 
+## 物理处理回调：重置球的传送在这里执行
+## 直接改 global_position 会被物理服务器用旧状态覆盖回来，所以 reset_ball() 只立标志，
+## 在这里改 state.transform 把球送回初始位置，清掉速度并让球睡下保持静止
+func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
+	if not _reset_pending:
+		return
+	_reset_pending = false
+	state.transform = Transform2D(0.0, _initial_pos)
+	state.linear_velocity = Vector2.ZERO
+	state.angular_velocity = 0.0
+	state.sleeping = true
+
 ## 发球
 func ShotBall() -> void:
-	if (shotBall == true):
+	if shotBall:
 		return
-	
 	shotBall = true
-	rigidBody.linear_velocity = Vector2(-200, -300)
-	
+	sleeping = false
+	linear_velocity = Vector2(-200, -300)
+
 ## 碰撞检测
 func _on_body_entered(body: Node) -> void:
 	# 与砖块的碰撞检测
@@ -72,9 +90,8 @@ func _on_body_entered(body: Node) -> void:
 				rigidBody.linear_velocity.x -= 120
 			Player.MoveDirection.Right:
 				rigidBody.linear_velocity.x += 120
-				
+
 ## 重置球
-func reset_ball(position: Vector2):
-	rigidBody.linear_velocity = Vector2(0, 0)
-	global_position = position
+func reset_ball() -> void:
 	shotBall = false
+	_reset_pending = true

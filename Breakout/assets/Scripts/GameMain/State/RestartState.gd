@@ -13,7 +13,7 @@ func enter(prev_state: State) -> void:
 	game_main.reset_player_life()
 	
 	# 重置球
-	game_main.ball.reset_ball(Vector2(0, 240))
+	game_main.ball.reset_ball()
 	
 	# 销毁所有砖块并重新创建
 	game_main.block_generator.destroy_all_blocks()

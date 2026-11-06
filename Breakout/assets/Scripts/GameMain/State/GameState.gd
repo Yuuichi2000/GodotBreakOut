@@ -24,7 +24,7 @@ func update(delta) -> void:
 		machine.change_state(game_main.game_over_state_script)
 		return
 
-	game_main.ball.reset_ball(Vector2(0, 240))
+	game_main.ball.reset_ball()
 	EventBus.player_ready.emit()
 	machine.change_state(game_main.ready_state_script)
 
